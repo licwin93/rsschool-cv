@@ -53,7 +53,7 @@ const scrolled = window.scrollY > 0;
 
 ## Education
 
-- **International University MITSO**
+### International University MITSO
   - **Degree:** Bachelor of Laws - LLB, Jurisprudence
   - **Duration:** 2012 - 2018
 
