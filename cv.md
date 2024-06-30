@@ -27,7 +27,7 @@ const scrolled = window.scrollY > 0;
 	}
 });
 ```
-    
+   
 ## Experience
 
 ### Stadler
