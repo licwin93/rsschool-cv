@@ -1,12 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <img src="img/me.webp" alt="Описание изображения" class="styled-image">
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/mobile.css">
+		<link rel="icon" href="assets/img/cat.png">
+		<title>CV</title>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<div class="header-container">
+					<div class="logo"></div>
+					<div class="burger-menu">
+						<div class="burger">
+							<div class="bar line1"></div>
+							<div class="bar line2"></div>
+							<div class="bar line3"></div>			
+						</div>			
+					</div>
+					<nav class="navigation">
+						<ul class="nav-list">
+							<li>
+								<a href="#me">Me</a>
+							</li>
+							<li>
+								<a href="#experience">Experience</a>
+							</li>
+							<li>
+								<a href="#education">Education</a>
+							</li>
+							<li>
+								<a href="#skills">Skills</a>
+							</li>
+							<li>
+								<a href="#languages">Languages</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="box-hero" id="me">
+				<div class="wrapper-hero">
+					<div class="hero-container">
+						<div class="box-hero-left">
+							<div class="photo"></div>
+							<div class="it"></div>
+							<div>
+								<h1 class="text-head">Aliaksandr Kicka</h1>
+								<p class="text-prof">Senior System Administrator</p>
+							</div>
+						</div>
+						<div class="box-hero-right">
+							<div class="info">	
+								<div class="contacts">
+									<ul>
+										<li><img src="assets/img/poland.png" alt="flag" class="icons"> Poland</li>
+										<li><img src="assets/img/mail.png" alt="mail" class="icons"> aliaksandr.kicka@gmail.com</li>
+										<li><img src="assets/img/phonecall.png" alt="phone" class="icons"> +48 724 338 934</li>
+									</ul>
+								</div>
+								<div class="social">
+									<a class="social-button logo-in" href="https://www.linkedin.com/in/aliaksandrkicka/" target="_blank"></a>
+									<a class="social-button logo-git" href="https://github.com/licwin93" target="_blank"></a>
+								</div>
+							</div>
+							<a href="assets/doc/Kicka_CV.pdf" download class="social-button download">
+								<img src="assets/img/cv.png" alt="PDF">Download CV
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-work" id="experience">
+				<div class="wrapper-contant">
+					<div class="work-info">
+						<h2>Experience:</h2>
+						<h4>Stadler - 5 years 3 months</h4>
+						<ul>
+							<li>Senior Information Technology System Administrator in Poland <br> - July 2023 - Present (1 year)
+								<br> Siedlce, Mazowieckie, Poland</li>						
+							<li>Information Technology System Administrator in Poland <br> - June 2021 - Present (3 years 1 month)
+								<br> Siedlce, Mazowieckie, Poland</li>
+							<li>Information Technology System Administrator in Belarus <br> - April 2019 - June 2021 (2 years 3 months)
+								<br> Fanipal, Minsk Province, Belarus</li>
+							<li>
+								<h4>Prosecutor General's Office of the Republic of Belarus</h4>
+                            </li>
+							<li>Leading Specialist of the Dept. of Secret Processing,Security Management of Secret
+								Activities &
+								IT
+								<br>- August 2015 - April 2017 (1 year 9 months) 
+								<br> Minsk, Belarus
+							</li>
+						</ul>
+					</div>
+					<div class="pic-work">
+						<img src="assets/img/work.svg" alt="work picture">
+					</div>
+				</div>
+			</section>
+			<section class="section-edu" id="education">
+				<div class="wrapper-contant">
+					<div class="pic-edu">
+						<img src="assets/img/edu.svg" alt="work picture">
+					</div>
+					<div class="edu-info">
+						<h2>Education:</h2>
+						<p>International university MITSO
+							<br> Bachelor of Laws - LLB, Jurisprudence <br> (2012 - 2018)
+						</p>
+						<h2>Certifications:</h2>
+						<ul>
+							<li>AZ 104T00 Administrator Microsoft Azure</li>
+							<li>CCNA: Cisco Certified Network Associate</li>
+							<li>AZ-040T00 Automsting Administration with PowerShell</li>
+							<li>Active Directory services with Windows Server</li>
+							<li>MS-55197 Microsoft SharePoint Server 2016 for the Site Owner/Power User</li>
+							<li>MS-20345-1 Administering Exchange Server 2016/2019</li>
+							<li>VMware vSphere: Install, Configure, Manage [V7.0]</li>
+							<li>Administering Microsoft Windows Server 2012 (20411)</li>
+							<li>Administering Microsoft System Center Configuration Manager (20703-1)</li>	
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section-skill" id="skills">
+				<div class="wrapper-contant">
+					<div class="skil-info">
+						<h2>Skills:</h2>
+						<ul>
+							<li><img src="assets/img/github.png" alt="github" class="icons-skill"> GitHub</li>
+							<li><img src="assets/img/html.png" alt="github" class="icons-skill"> HTML5</li>
+							<li><img src="assets/img/css.png" alt="github" class="icons-skill"> CSS3 & SCSS</li>
+							<li><img src="assets/img/js.png" alt="github" class="icons-skill"> JavaScript</li>
+							<li><img src="assets/img/php.png" alt="github" class="icons-skill"> PHP</li>
+							<li><img src="assets/img/wordpress.png" alt="github" class="icons-skill">Wordpress </li>
+							<li><img src="assets/img/photoshop.png" alt="github" class="icons-skill"> Photoshop</li>
+						</ul>
+					</div>
+					<div class="js-box">
+						<div class="js-code">
+							<img src="assets/img/skill.svg" alt="work picture">
+							<pre>
+								<code>
+window.addEventListener("scroll", () => {
+	const header = document.querySelector("header");
+	const scrolled = window.scrollY > 0;
+
+	if (scrolled) {
+		header.classList.add('nav-scrolled');
+	} else {
+		header.classList.remove('nav-scrolled');
+	}
+});
+								</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-lang" id="languages">
+				<div class="wrapper-contant">
+					<div class="lang-info">
+						<h2>languages:</h2>
+						<ul>
+							<li><img src="assets/img/poland.png" alt="github" class="icons-lang">Polish (Native or Bilingual)</li>
+							<li><img src="assets/img/belarusian.png" alt="github" class="icons-lang">Belarusian (Native or Bilingual)</li>
+							<li><img src="assets/img/english.png" alt="github" class="icons-lang">English (Limited Working)</li>
+							<li><img src="assets/img/russian.png" alt="github" class="icons-lang">Russian (Native or Bilingual)</li>
+						</ul>
+					</div>
+					<div class="pic-lang">
+						<img src="assets/img/lang.svg" alt="work picture">
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="git">
+				<a class="social-button logo-git" href="https://github.com/licwin93" target="_blank">
+				</a>
+			</div>
+			<div class="textfoot">
+				<span>&copy;2024 Aliaksandr Kicka</span>
+			</div>
+			<div class="appschool">
+				<a class="social-button logo-school" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+				</a>
+			</div>
+		</footer>
+		<script src="assets/js/scroll.js"></script>
+		<script src="assets/js/burger.js"></script>
+	</body>
 </html>

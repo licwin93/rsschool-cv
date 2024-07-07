@@ -1,0 +1,554 @@
+:root {
+	--monitor: 1440px;
+	--color-one: #ab5f5f;
+	--color-two: #fff;
+	--transparent: transparent;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	scroll-behavior: smooth; 
+}
+
+ul {
+	list-style-type: none;
+}
+
+.wrapper {
+	width: 1920px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.wrapper-hero {
+	display: flex;
+	width: var(--monitor);
+	max-width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.wrapper-contant {
+	display: flex;
+	width: var(--monitor);
+	max-width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* header */
+
+header {
+	position: fixed;
+	max-width: 100%;
+	height: 70px;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: var(--transparent);
+	z-index: 3;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 100%;
+	height: 100%;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	background-image: url(/rsschool-cv/assets/img/cat.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	filter: drop-shadow(0 0 0.75rem black);
+	animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.2);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.navigation { 
+	margin: 0;
+	position: relative;
+}
+
+.nav-list  {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 20px;
+	padding: 0 20px;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+li a {
+	padding: 0 10px;
+	color: var(--color-two);
+	text-decoration: none;  
+	transition: color 1s;
+}
+
+a:hover	{
+	color: #ffd51d;
+}
+
+.nav-list li a.active {
+    color: #ffd51d;
+}
+
+.nav-link-active {
+    color: #5a5a5a;
+}
+
+.nav-link-active:hover {
+    color: #ffd51d;
+}
+
+/* main */
+
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+/* hero */
+
+.box-hero {
+	position: relative;
+	max-width: 100%;
+	margin: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.445), -4px 4px 8px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.box-hero-left {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(145deg, #ffffff, #e6e6e6);
+	z-index: 2;
+}
+
+.photo {
+	width: 250px;
+	max-width: 100%;
+	height: 250px;
+	background-image: url(/rsschool-cv/assets/img/me.webp);
+	background-position: 0 20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid grey;
+	border-radius: 50%;
+}
+
+.it {
+	position: absolute;
+	left: 50%;
+	width: 250px; 
+	max-width: 100%;
+	height: 100%; 
+	background-image: url(/rsschool-cv/assets/img/it.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+
+.text-head {
+	font-weight: 900;
+	margin: 0;
+	font-size: 50px;
+}
+
+.text-prof {
+	font-size: 23px;
+	margin: 0;
+	border-bottom: solid 1px;
+}
+
+.box-hero-right {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+.box-hero-right::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: url(/rsschool-cv/assets/img/codeimg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: grayscale(100%) blur(2px) brightness(15%);
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 380px;
+	height: 230px;
+}
+
+.info::before {
+	position: absolute;
+	content: "";
+	width: 380px;
+	height: 230px;
+	padding: 20px;
+	border-radius: 25px;
+	background: black;
+	filter: opacity(0.7);
+	box-shadow:  22px 22px 44px #4e4e4e,
+            -22px -22px 44px #4e4e4e;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: large;
+	font-weight: 600;
+	z-index: 2;
+}
+
+.icons { 
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	z-index: 2;
+}
+
+.social-button {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin: 0 10px;
+	background-color: transparent;
+	transition: 0.3s;
+}
+
+.social-button:hover {
+	filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+	transform: scale(1.1);
+}
+
+.social-button:active {
+	transform: scale(0.95) rotateZ(1.1deg);
+}
+
+.logo-in {
+	line-height: 1;
+	display: block;
+	background-image: url(/rsschool-cv/assets/img/linkedin.gif);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.logo-git {
+	line-height: 1;
+	display: block;
+	background-image: url(/rsschool-cv/assets/img/github.gif);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.download {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 40px;
+	border-radius: 7px;
+	background: linear-gradient(100deg, #ffffff, #000000);
+	box-shadow:  5px 5px 10px #ffffff34,
+            -5px -5px 10px #ffffff34;
+	cursor: pointer;
+	color: #fff;
+	font-size: large;
+	font-weight: 900;
+	text-decoration: none; 
+	margin-top: 50px;
+	z-index: 2;
+}
+
+.download img {
+margin-right: 5px;
+width: 60px;
+}
+
+.download:hover {
+	width: 200px;
+	height: 40px;
+	border-radius: 7px;
+	background: linear-gradient(145deg, #ffffff, #9a5656);
+	box-shadow:  5px 5px 10px #8449496b,
+            -5px -5px 10px #d2757575;
+}
+
+/* work */
+
+.section-work {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	max-width: 100%;
+	height: 100%;
+	background:#ab5f5f;;
+	line-height: 2;
+	color: #fff;
+	font-size: 18px;
+}
+
+.work-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:flex-start;
+	width: 50%;
+}
+
+.pic-work {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 50%;
+}
+
+.pic-work img {
+	width: 80%;
+    height: auto;
+}
+
+/* education */
+
+.section-edu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	max-width: 100%;
+	height: 100%;
+	background: linear-gradient(145deg, #ffffff, #e6e6e6);
+	font-size: 18px;
+}
+
+.pic-edu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	width: 50%;
+}
+
+.pic-edu img {
+	width: 80%;
+    height: auto;
+}
+
+.edu-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	width: 50%;
+}
+
+/* skill */
+
+.section-skill {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	max-width: 100%;
+	height: 100%;
+	background: #ab5f5f;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.skil-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 50%;
+}
+
+.icons-skill { 
+	vertical-align: middle;
+	margin: 10px;
+	width: 30%;
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+.js-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 50%;
+}
+
+.js-code {
+	position: relative;
+	display: inline-block;
+}
+
+.js-code img {
+	display: block;
+	width: 1000px;
+}
+
+.js-code pre {
+	position: absolute;
+	top: 139px;
+	left:115px;
+	color: white;
+	white-space: pre-wrap;
+	width: 33%;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+
+/* lang */
+
+.section-lang {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+	height: 100%;
+	background: linear-gradient(145deg, #ffffff, #e6e6e6);
+	font-size: 22px;
+}
+
+.lang-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:flex-start;
+	width: 50%;
+}
+
+.icons-lang { 
+	vertical-align: middle;
+	margin: 10px;
+	width: 23%;
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+.pic-lang {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	width: 50%;
+}
+
+.pic-lang img {
+	width: 80%;
+    height: auto;
+}
+
+/* footer */
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items:center;
+	vertical-align: middle;
+	max-width: 100%;
+	height: 100%;
+	background-color: #616396;
+	padding: 20px 150px;
+	z-index: 2;
+}
+
+.textfoot {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: large;
+}
+
+.logo-school {
+	line-height: 1;
+	display: block;
+	background-image: url(/rsschool-cv/assets/img/rs-school-logo.svg);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
