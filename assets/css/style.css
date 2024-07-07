@@ -71,7 +71,7 @@ header {
 .logo {
 	width: 70px;
 	height: 70px;
-	background-image: url(/assets/img/cat.png);
+	background-image: url(/rsschool-cv/assets/img/cat.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -179,7 +179,7 @@ main {
 	width: 250px;
 	max-width: 100%;
 	height: 250px;
-	background-image: url(/assets/img/me.webp);
+	background-image: url(/rsschool-cv/assets/img/me.webp);
 	background-position: 0 20%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -193,7 +193,7 @@ main {
 	width: 250px; 
 	max-width: 100%;
 	height: 100%; 
-	background-image: url(/assets/img/it.svg);
+	background-image: url(/rsschool-cv/assets/img/it.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 50%;
@@ -228,7 +228,7 @@ main {
 	content: "";
 	width: 100%;
 	height: 100%;
-	background-image: url(/assets/img/codeimg.jpg);
+	background-image: url(/rsschool-cv/assets/img/codeimg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -303,7 +303,7 @@ main {
 .logo-in {
 	line-height: 1;
 	display: block;
-	background-image: url(/assets/img/linkedin.gif);
+	background-image: url(/rsschool-cv/assets/img/linkedin.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -312,7 +312,7 @@ main {
 .logo-git {
 	line-height: 1;
 	display: block;
-	background-image: url(/assets/img/github.gif);
+	background-image: url(/rsschool-cv/assets/img/github.gif);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -547,7 +547,7 @@ width: 60px;
 .logo-school {
 	line-height: 1;
 	display: block;
-	background-image: url(/assets/img/rs-school-logo.svg);
+	background-image: url(/rsschool-cv/assets/img/rs-school-logo.svg);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
